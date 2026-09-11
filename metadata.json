@@ -1,0 +1,6 @@
+{
+  "name": "Guía de Acupuntura",
+  "description": "Guía interactiva y consulta rápida de acupuntura para aliviar dolencias comunes y elegir especialistas confiables.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
