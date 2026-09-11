@@ -14,7 +14,7 @@ import { Disclaimer } from './Disclaimer';
 
 export const SpecialistScreen: React.FC = () => {
   const getSafetyIcon = (iconName: string) => {
-    const iconClass = 'h-5 w-5 text-emerald-800 flex-shrink-0';
+    const iconClass = 'h-5 w-5 text-orange-800 flex-shrink-0';
     switch (iconName) {
       case 'ShieldCheck':
         return <ShieldCheck className={iconClass} />;
@@ -31,13 +31,13 @@ export const SpecialistScreen: React.FC = () => {
   return (
     <article id="pantalla-especialista" className="flex flex-col min-h-full pb-32 pt-2">
       {/* Header Card */}
-      <div className="rounded-3xl border border-emerald-950/10 bg-white p-6 sm:p-7 shadow-xs">
-        <div className="flex items-center gap-2 text-emerald-900 font-bold text-xs uppercase tracking-wider mb-2">
-          <ShieldCheck className="h-4 w-4 text-emerald-700" />
+      <div className="rounded-3xl border border-orange-950/10 bg-white p-6 sm:p-7 shadow-xs">
+        <div className="flex items-center gap-2 text-orange-900 font-bold text-xs uppercase tracking-wider mb-2">
+          <ShieldCheck className="h-4 w-4 text-orange-700" />
           <span>Capítulo 10 y Conclusión del Ebook</span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl font-extrabold text-emerald-950 tracking-tight leading-snug">
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-orange-950 tracking-tight leading-snug">
           {SPECIALIST_GUIDE.title}
         </h2>
 
@@ -45,20 +45,20 @@ export const SpecialistScreen: React.FC = () => {
           {SPECIALIST_GUIDE.subtitle}
         </p>
 
-        <div className="mt-4 rounded-2xl bg-emerald-50/80 border border-emerald-900/10 p-4">
-          <p className="text-sm sm:text-base text-emerald-950 font-medium leading-relaxed">
+        <div className="mt-4 rounded-2xl bg-orange-50/80 border border-orange-900/10 p-4">
+          <p className="text-sm sm:text-base text-orange-950 font-medium leading-relaxed">
             {SPECIALIST_GUIDE.summary}
           </p>
         </div>
       </div>
 
       {/* Safety Points from the Conclusion: Disposable needles, sterilization, credentials */}
-      <div className="mt-5 rounded-3xl border border-emerald-950/10 bg-white p-6 sm:p-7 shadow-xs">
+      <div className="mt-5 rounded-3xl border border-orange-950/10 bg-white p-6 sm:p-7 shadow-xs">
         <div className="flex items-center gap-2.5 mb-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-100 text-emerald-900">
-            <Syringe className="h-5 w-5 text-emerald-800" />
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-orange-100 text-orange-900">
+            <Syringe className="h-5 w-5 text-orange-800" />
           </div>
-          <h3 className="text-lg sm:text-xl font-extrabold text-emerald-950">
+          <h3 className="text-lg sm:text-xl font-extrabold text-orange-950">
             Reglas críticas de seguridad sanitaria
           </h3>
         </div>
@@ -70,14 +70,14 @@ export const SpecialistScreen: React.FC = () => {
           {SPECIALIST_GUIDE.safetyChecklist.map((item, index) => (
             <div
               key={index}
-              className="rounded-2xl border border-emerald-950/10 bg-emerald-50/40 p-4 transition-all hover:bg-emerald-50/80"
+              className="rounded-2xl border border-orange-950/10 bg-orange-50/40 p-4 transition-all hover:bg-orange-50/80"
             >
               <div className="flex items-start gap-3">
-                <div className="mt-0.5 rounded-lg bg-white p-2 border border-emerald-950/10 shadow-xs">
+                <div className="mt-0.5 rounded-lg bg-white p-2 border border-orange-950/10 shadow-xs">
                   {getSafetyIcon(item.icon)}
                 </div>
                 <div>
-                  <h4 className="text-sm sm:text-base font-bold text-emerald-950 leading-snug">
+                  <h4 className="text-sm sm:text-base font-bold text-orange-950 leading-snug">
                     {item.title}
                   </h4>
                   <p className="mt-1 text-xs sm:text-sm text-stone-700 leading-relaxed">
@@ -91,8 +91,8 @@ export const SpecialistScreen: React.FC = () => {
       </div>
 
       {/* Chapter 10 Full Translated Content */}
-      <div className="mt-5 rounded-3xl border border-emerald-950/10 bg-white p-6 sm:p-8 shadow-xs">
-        <h3 className="text-lg sm:text-xl font-bold text-emerald-950 mb-4 pb-2 border-b border-emerald-950/10">
+      <div className="mt-5 rounded-3xl border border-orange-950/10 bg-white p-6 sm:p-8 shadow-xs">
+        <h3 className="text-lg sm:text-xl font-bold text-orange-950 mb-4 pb-2 border-b border-orange-950/10">
           Lo que debes saber para elegir correctamente
         </h3>
 
@@ -100,7 +100,7 @@ export const SpecialistScreen: React.FC = () => {
           {SPECIALIST_GUIDE.whatYouMustKnow.map((section, sIndex) => (
             <section key={sIndex} className="space-y-3">
               {section.subtitle && (
-                <h4 className="text-base sm:text-lg font-bold text-emerald-900">
+                <h4 className="text-base sm:text-lg font-bold text-orange-900">
                   {section.subtitle}
                 </h4>
               )}
@@ -118,10 +118,10 @@ export const SpecialistScreen: React.FC = () => {
       </div>
 
       {/* Recommended Questions Checklist */}
-      <div className="mt-5 rounded-3xl border border-emerald-950/10 bg-white p-6 sm:p-7 shadow-xs">
-        <div className="flex items-center gap-2 text-emerald-900 font-bold text-base mb-2">
-          <HelpCircle className="h-5 w-5 text-emerald-700" />
-          <h3 className="text-lg font-bold text-emerald-950">
+      <div className="mt-5 rounded-3xl border border-orange-950/10 bg-white p-6 sm:p-7 shadow-xs">
+        <div className="flex items-center gap-2 text-orange-900 font-bold text-base mb-2">
+          <HelpCircle className="h-5 w-5 text-orange-700" />
+          <h3 className="text-lg font-bold text-orange-950">
             Preguntas recomendadas para tu primera consulta
           </h3>
         </div>
@@ -133,9 +133,9 @@ export const SpecialistScreen: React.FC = () => {
           {SPECIALIST_GUIDE.questionsToAsk.map((question, index) => (
             <li
               key={index}
-              className="flex items-start gap-3 rounded-xl border border-emerald-900/10 bg-emerald-50/50 p-3.5 text-sm sm:text-base text-stone-800"
+              className="flex items-start gap-3 rounded-xl border border-orange-900/10 bg-orange-50/50 p-3.5 text-sm sm:text-base text-stone-800"
             >
-              <CheckCircle2 className="h-4 w-4 text-emerald-700 mt-1 flex-shrink-0" />
+              <CheckCircle2 className="h-4 w-4 text-orange-700 mt-1 flex-shrink-0" />
               <span>{question}</span>
             </li>
           ))}

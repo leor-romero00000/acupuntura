@@ -18,7 +18,7 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header
       id="app-header"
-      className="sticky top-0 z-30 w-full border-b border-emerald-950/10 bg-white/95 backdrop-blur-md transition-shadow"
+      className="sticky top-0 z-30 w-full border-b border-orange-950/10 bg-white/95 backdrop-blur-md transition-shadow"
     >
       <div className="mx-auto flex h-16 max-w-3xl items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-3">
@@ -27,23 +27,23 @@ export const Header: React.FC<HeaderProps> = ({
               id="header-back-button"
               onClick={onBack}
               type="button"
-              className="group flex h-11 items-center gap-1.5 rounded-lg border border-emerald-900/15 bg-emerald-50/70 px-3.5 text-sm font-semibold text-emerald-900 shadow-xs transition-all hover:bg-emerald-100 hover:text-emerald-950 active:scale-95 focus:outline-none focus:ring-2 focus:ring-emerald-700/30"
+              className="group flex h-11 items-center gap-1.5 rounded-lg border border-orange-900/15 bg-orange-50/70 px-3.5 text-sm font-semibold text-orange-900 shadow-xs transition-all hover:bg-orange-100 hover:text-orange-950 active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-700/30"
               aria-label="Volver a la pantalla anterior"
             >
               <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
               <span>Atrás</span>
             </button>
           ) : (
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-900 text-white shadow-xs">
-              <Sparkles className="h-5 w-5 text-emerald-300" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange-900 text-white shadow-xs">
+              <Sparkles className="h-5 w-5 text-orange-300" />
             </div>
           )}
 
           <div>
-            <h1 className="text-base sm:text-lg font-bold text-emerald-950 tracking-tight leading-tight">
+            <h1 className="text-base sm:text-lg font-bold text-orange-950 tracking-tight leading-tight">
               {titleOverride || 'Guía de Acupuntura'}
             </h1>
-            <p className="text-xs text-emerald-800/80 font-medium">
+            <p className="text-xs text-orange-800/80 font-medium">
               {currentScreen === 'inicio' && 'Manual práctico e interactivo'}
               {currentScreen === 'seleccion' && '¿Qué te está molestando?'}
               {currentScreen === 'resultado' && 'Tratamiento y recomendaciones'}
@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         <div className="hidden sm:flex items-center">
-          <span className="inline-flex items-center rounded-full bg-emerald-100/90 px-3 py-1 text-xs font-semibold text-emerald-900 border border-emerald-200">
+          <span className="inline-flex items-center rounded-full bg-orange-100/90 px-3 py-1 text-xs font-semibold text-orange-900 border border-orange-200">
             Contenido 100% traducido
           </span>
         </div>

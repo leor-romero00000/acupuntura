@@ -89,7 +89,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f7faf8] text-stone-900 flex flex-col font-sans antialiased selection:bg-emerald-200 selection:text-emerald-950">
+    <div className="min-h-screen bg-[#fffaf5] text-stone-900 flex flex-col font-sans antialiased selection:bg-orange-200 selection:text-orange-950">
       {/* Top Header with Back button and branding */}
       <Header
         currentScreen={currentScreen}
